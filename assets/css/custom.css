@@ -571,15 +571,20 @@ body.projects-page,
 
 /* Luxury Hero Center Stage Content */
 .art-hero__content {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 4;
   text-align: center;
   max-width: 960px;
-  padding: 0 1.5rem;
-  margin-top: 1.5rem;
+  width: calc(100% - 3rem);
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .art-hero__tag {
@@ -6485,8 +6490,14 @@ html {
     object-fit: cover;
   }
   .art-hero__content {
-    padding: 0 1.25rem !important;
-    margin-top: 0 !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: calc(100% - 2.5rem) !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   .art-hero__tag {
     font-size: 0.62rem !important;
