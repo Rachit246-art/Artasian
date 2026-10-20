@@ -1194,118 +1194,186 @@ body.projects-page,
   font-family: 'Playfair Display', Georgia, serif;
 }
 
-/* 1. Feature Pillars Bar */
+/* 1. Feature Pillars Bar - Luxury Architectural Ribbon */
 .art-pillars {
   background-color: #faf9f6;
   border-top: 1px solid #ebe4d8;
   border-bottom: 1px solid #ebe4d8;
-  padding: clamp(1.25rem, 2.5vw, 1.85rem) clamp(1rem, 3vw, 2.5rem);
+  padding: 1.75rem 2rem;
   width: 100%;
   position: relative;
   z-index: 10;
 }
 
-.art-pillars__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem;
+.art-pillars__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  gap: 1.5rem;
 }
 
 .art-pillar-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.85rem;
-  padding: 0.85rem 1.25rem;
-  background: #ffffff;
-  border: 1px solid #ede6db;
-  border-radius: 999px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  gap: 1.15rem;
+  padding: 0.5rem 0.75rem;
+  flex: 1;
+  text-decoration: none;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
 }
 
 .art-pillar-item:hover {
   transform: translateY(-2px);
-  border-color: #c5a47e;
-  box-shadow: 0 8px 24px rgba(114, 20, 27, 0.08);
+}
+
+.art-pillar-num {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #c5a47e;
+  letter-spacing: 0.08em;
+  opacity: 0.9;
+  line-height: 1;
 }
 
 .art-pillar-icon {
-  width: 24px;
-  height: 24px;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #eadecb;
   flex-shrink: 0;
   color: #72141b;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: all 0.35s ease;
 }
 
 .art-pillar-icon svg {
-  width: 100%;
-  height: 100%;
+  width: 18px;
+  height: 18px;
   stroke: currentColor;
   fill: none;
   stroke-width: 1.8;
+  transition: transform 0.3s ease;
+}
+
+.art-pillar-item:hover .art-pillar-icon {
+  background-color: #72141b;
+  border-color: #72141b;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(114, 20, 27, 0.25);
+}
+
+.art-pillar-item:hover .art-pillar-icon svg {
+  transform: scale(1.12);
+}
+
+.art-pillar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
 }
 
 .art-pillar-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   font-weight: 600;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: #1a1817;
   white-space: nowrap;
-  line-height: 1;
+  line-height: 1.2;
+}
+
+.art-pillar-sub {
+  font-size: 0.72rem;
+  color: #7d756d;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
+.art-pillar-divider {
+  width: 1px;
+  height: 38px;
+  background: linear-gradient(180deg, transparent, #e3dacd, transparent);
+  flex-shrink: 0;
 }
 
 @media (max-width: 1024px) {
-  .art-pillars__grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 0.85rem !important;
+  .art-pillars {
+    padding: 1.5rem 1.25rem;
+  }
+  .art-pillars__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem 1.5rem;
+  }
+  .art-pillar-divider {
+    display: none;
+  }
+  .art-pillar-item {
+    padding: 0.5rem 0;
   }
 }
 
 @media (max-width: 768px) {
   .art-pillars {
-    padding: 1.25rem 0.85rem !important;
+    padding: 1.5rem 1rem !important;
   }
-  .art-pillars__grid {
+  .art-pillars__container {
+    display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 0.65rem !important;
+    gap: 0.85rem !important;
+  }
+  .art-pillar-divider {
+    display: none !important;
   }
   .art-pillar-item {
-    padding: 0.75rem 0.85rem !important;
-    gap: 0.6rem !important;
-    border-radius: 999px !important;
+    background: #ffffff !important;
+    border: 1px solid #ede6db !important;
+    border-radius: 12px !important;
+    padding: 0.85rem 0.75rem !important;
+    gap: 0.65rem !important;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.02) !important;
+  }
+  .art-pillar-num {
+    display: none !important;
   }
   .art-pillar-icon {
-    width: 20px !important;
-    height: 20px !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 8px !important;
+  }
+  .art-pillar-icon svg {
+    width: 16px !important;
+    height: 16px !important;
   }
   .art-pillar-title {
-    font-size: 0.72rem !important;
-    letter-spacing: 0.01em !important;
+    font-size: 0.76rem !important;
+    white-space: normal !important;
+  }
+  .art-pillar-sub {
+    display: none !important;
   }
 }
 
 @media (max-width: 420px) {
-  .art-pillars__grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 0.5rem !important;
+  .art-pillars__container {
+    gap: 0.65rem !important;
   }
   .art-pillar-item {
-    padding: 0.65rem 0.5rem !important;
-    gap: 0.45rem !important;
-  }
-  .art-pillar-icon {
-    width: 18px !important;
-    height: 18px !important;
+    padding: 0.75rem 0.6rem !important;
   }
   .art-pillar-title {
-    font-size: 0.66rem !important;
+    font-size: 0.72rem !important;
   }
 }
 
