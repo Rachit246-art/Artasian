@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Climate & Biodiversity Emergency | Artasian</title>
+  <meta name="description" content="Artasian declares a climate and biodiversity emergency. Learn about our commitments to regenerative landscape design.">
+  <link rel="icon" type="image/png" href="assets/img/artasian-icon-dark.png">
+
+  <!-- Google Fonts: Luxury Architectural Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/custom.css?v=18.0">
+</head>
+<body class="bg-white">
+
+  <!-- Header -->
+  <header class="fixed inset-x-0 top-0 w-full header z-100 md:z-40">
+    <div class="relative z-30 flex flex-wrap items-center justify-between header__inner">
+      <a class="inline-block header__logo" href="index.html" title="Artasian – Home">
+        <img class="header__logo-img header__logo--white" src="assets/img/artasian-logo-white.png" alt="Artasian" height="48">
+        <img class="header__logo-img header__logo--dark" src="assets/img/artasian-logo-dark.png" alt="Artasian" height="48">
+      </a>
+
+      <div class="hidden md:flex items-center ml-auto mr-4">
+        <ul class="font-bold tracking-wide c-secondary-nav">
+          <li class="c-secondary-nav__item">
+            <a class="c-secondary-nav__link block p-1 text-xs uppercase" href="practice.html">
+              <span>Practice</span>
+            </a>
+          </li>
+          <li class="c-secondary-nav__item">
+            <a class="c-secondary-nav__link block p-1 text-xs uppercase" href="practice.html#people">
+              <span>People</span>
+            </a>
+          </li>
+          <li class="c-secondary-nav__item">
+            <a class="c-secondary-nav__link block p-1 text-xs uppercase" href="practice.html#awards">
+              <span>Awards</span>
+            </a>
+          </li>
+          <li class="c-secondary-nav__item">
+            <a class="c-secondary-nav__link block p-1 text-xs uppercase" href="practice.html#clients">
+              <span>Clients</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="-mr-1 appearance-none burger" type="button" data-menu-opener id="menu" aria-label="Toggle navigation menu">
+        <span class="burger__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- LUXURY ARCHITECTURAL SIDE DRAWER & BACKDROP -->
+  <div class="art-drawer-backdrop" id="drawer-backdrop"></div>
+  
+  <aside class="art-drawer" id="site-menu" role="dialog" aria-modal="true" aria-label="Navigation Menu">
+    <!-- Top Bar with Brand Pill & Close Button -->
+    <div class="art-drawer__header">
+      <div class="art-drawer__brand">
+        <span class="art-drawer__eyebrow">ARTASIAN &bull; STUDIO</span>
+      </div>
+      <button type="button" class="art-drawer__close" id="menu-close-btn" aria-label="Close menu">
+        <span>&times;</span>
+      </button>
+    </div>
+
+    <!-- Main Navigation Links -->
+    <div class="art-drawer__body">
+      <ul class="art-drawer__nav" id="menu-inner">
+        <li class="art-drawer__item">
+          <a href="index.html" class="art-drawer__link">
+            <span class="art-drawer__num">01</span>
+            <span class="art-drawer__text">Home</span>
+          </a>
+        </li>
+        <li class="art-drawer__item">
+          <a href="planet.html" class="art-drawer__link is-active-page">
+            <span class="art-drawer__num">02</span>
+            <span class="art-drawer__text">Planet</span>
+          </a>
+        </li>
+        <li class="art-drawer__item">
+          <a href="practice.html" class="art-drawer__link">
+            <span class="art-drawer__num">03</span>
+            <span class="art-drawer__text">Practice</span>
+          </a>
+        </li>
+        <li class="art-drawer__item">
+          <a href="projects.html" class="art-drawer__link">
+            <span class="art-drawer__num">04</span>
+            <span class="art-drawer__text">Projects</span>
+          </a>
+        </li>
+        <li class="art-drawer__item">
+          <a href="news.html" class="art-drawer__link">
+            <span class="art-drawer__num">05</span>
+            <span class="art-drawer__text">Latest</span>
+          </a>
+        </li>
+        <li class="art-drawer__item">
+          <a href="careers.html" class="art-drawer__link">
+            <span class="art-drawer__num">06</span>
+            <span class="art-drawer__text">Careers</span>
+          </a>
+        </li>
+        <li class="art-drawer__item">
+          <a href="contact.html" class="art-drawer__link">
+            <span class="art-drawer__num">07</span>
+            <span class="art-drawer__text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Footer: Studio Location & Contact -->
+    <div class="art-drawer__footer">
+      <div class="art-drawer__studios">
+        <span class="art-drawer__city">Bath</span>
+        <span class="art-drawer__sep">&bull;</span>
+        <span class="art-drawer__city">London</span>
+        <span class="art-drawer__sep">&bull;</span>
+        <span class="art-drawer__city">Singapore</span>
+      </div>
+      <p class="art-drawer__email">
+        <a href="mailto:info@artasian.com">info@artasian.com</a>
+      </p>
+    </div>
+  </aside>
+
+  <main id="page-wrapper" class="planet-page">
+    <!-- Cinematic Full-Bleed Architectural Hero Banner -->
+    <section class="planet-page-hero">
+      <img src="assets/img/intro/climate-emergency.jpg" class="lux-hero-bg" alt="Climate & Biodiversity Emergency Declaration" width="2560" height="1707">
+      <div class="lux-hero-overlay"></div>
+
+      <div class="planet-container relative z-20 w-full">
+        <div class="lux-hero-card" data-aos="fade-up">
+          <span class="lux-hero-eyebrow">Our Planetary Commitment &bull; Ecological Architecture</span>
+          <h1 class="lux-hero-title">Climate &amp; Biodiversity Emergency</h1>
+          <p class="lux-hero-lead">&ldquo;As landscape architects, we stand at the critical threshold between human civilization and the living biosphere. Our duty is to design spaces that regenerate natural ecosystems.&rdquo;</p>
+          <div class="lux-hero-actions">
+            <a href="#stats" class="lux-hero-btn">
+              <span>View Commitments</span>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="lux-hero-badge-tag">
+        <span>UK Landscape Architects Declare Signatory</span>
+      </div>
+    </section>
+
+    <!-- Impact & Measurable Targets Statistics Row -->
+    <section class="planet-container" id="stats" style="padding-top: 5rem;">
+      <div class="planet-stats-row">
+        <div class="planet-stat-card">
+          <div class="planet-stat-card__num">100<span>%</span></div>
+          <div class="planet-stat-card__label">Projects Designed with Biodiversity Net Gain</div>
+        </div>
+        <div class="planet-stat-card">
+          <div class="planet-stat-card__num">2030</div>
+          <div class="planet-stat-card__label">Target for Whole-Life Net Zero Embodied Carbon</div>
+        </div>
+        <div class="planet-stat-card">
+          <div class="planet-stat-card__num">4.2<span>M+</span></div>
+          <div class="planet-stat-card__label">m&sup2; of Restored Urban Canopy &amp; Bioswales</div>
+        </div>
+        <div class="planet-stat-card">
+          <div class="planet-stat-card__num">0<span> Waste</span></div>
+          <div class="planet-stat-card__label">Circular Material Stewardship Commitment</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Manifesto Section -->
+    <section class="planet-container">
+      <div class="planet-manifesto">
+        <div class="planet-manifesto__grid">
+          <div class="planet-manifesto__quote-box">
+            <blockquote class="planet-manifesto__quote">
+              &ldquo;Meeting the urgent needs of society without breaching the Earth&rsquo;s ecological boundaries demands a radical paradigm shift in how we conceive and build.&rdquo;
+            </blockquote>
+            <span class="planet-manifesto__author">Andrew Grant &bull; Founding Director</span>
+          </div>
+
+          <div class="planet-manifesto__prose">
+            <p>
+              Artasian recognises the dual climate and biodiversity emergency as the defining civilizational challenge of our era. As landscape architects, we hold the profound responsibility—and unique capability—to shape how humanity inhabits the earth in harmony with nature.
+            </p>
+            <p>
+              As a founding signatory of <strong>UK Landscape Architects Declare</strong>, we align our entire studio practice with regenerative design principles. Rather than simply minimizing harm, our masterplans act as active ecological engines: purifying water runoffs, capturing atmospheric carbon, cooling overheated metropolitan heat islands, and cultivating rich wildlife corridors.
+            </p>
+            <p>
+              From the iconic biodiverse superstructures of <em>Gardens by the Bay</em> in Singapore to restorative green corridors across the United Kingdom, our architectural interventions reconnect dense urban communities with the vital rhythms of the natural world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 Pillars of Regenerative Practice -->
+    <section class="planet-container planet-pillars">
+      <div class="planet-section-header">
+        <span class="planet-eyebrow">Strategic Roadmap</span>
+        <h2 class="planet-title">Our 5 Pillars of Action</h2>
+        <p class="planet-lead" style="font-size: 1.15rem; color: #7a7268;">
+          Concrete protocols implemented across every feasibility study, masterplan, and completed landscape project.
+        </p>
+      </div>
+
+      <div class="planet-pillars-grid">
+        <!-- Pillar 01 -->
+        <div class="planet-pillar-card">
+          <div class="planet-pillar-card__top">
+            <span class="planet-pillar-card__index">01 / SEQUESTRATION</span>
+            <h3 class="planet-pillar-card__title">Design for Net-Zero Carbon</h3>
+            <p class="planet-pillar-card__desc">
+              Prioritising carbon sequestration through engineered living soils, deep-root mature tree canopies, and rigorously specified low-embodied carbon masonry, dry-stone, and sustainably harvested timber.
+            </p>
+          </div>
+          <div class="planet-pillar-card__footer">
+            <span class="planet-pillar-card__target">Lifecycle Analysis</span>
+            <span class="planet-pillar-card__status">Active Protocol</span>
+          </div>
+        </div>
+
+        <!-- Pillar 02 -->
+        <div class="planet-pillar-card">
+          <div class="planet-pillar-card__top">
+            <span class="planet-pillar-card__index">02 / HABITAT</span>
+            <h3 class="planet-pillar-card__title">Biodiversity Net Gain (&gt;20%)</h3>
+            <p class="planet-pillar-card__desc">
+              Surpassing statutory minimums by engineering multi-layered indigenous planting palettes that serve as contiguous ecological highways for pollinators, birds, and native flora across high-density cityscapes.
+            </p>
+          </div>
+          <div class="planet-pillar-card__footer">
+            <span class="planet-pillar-card__target">Ecological Metric</span>
+            <span class="planet-pillar-card__status">Active Protocol</span>
+          </div>
+        </div>
+
+        <!-- Pillar 03 -->
+        <div class="planet-pillar-card">
+          <div class="planet-pillar-card__top">
+            <span class="planet-pillar-card__index">03 / HYDROLOGY</span>
+            <h3 class="planet-pillar-card__title">Water-Sensitive Urban Design</h3>
+            <p class="planet-pillar-card__desc">
+              Transforming stormwater from a flood hazard into a vibrant civic asset. Integrating bio-filtration swales, permeable pavements, and cascading rain gardens that clean and replenish subterranean aquifers.
+            </p>
+          </div>
+          <div class="planet-pillar-card__footer">
+            <span class="planet-pillar-card__target">Closed-Loop SuDS</span>
+            <span class="planet-pillar-card__status">Active Protocol</span>
+          </div>
+        </div>
+
+        <!-- Pillar 04 -->
+        <div class="planet-pillar-card">
+          <div class="planet-pillar-card__top">
+            <span class="planet-pillar-card__index">04 / CIRCULARITY</span>
+            <h3 class="planet-pillar-card__title">Hyper-Local Material Stewardship</h3>
+            <p class="planet-pillar-card__desc">
+              Specifying quarried stone, aggregates, and nursery stock within immediate regional radii. Mandating high-durability reclaimed elements and whole-life disassembly plans for zero-landfill construction.
+            </p>
+          </div>
+          <div class="planet-pillar-card__footer">
+            <span class="planet-pillar-card__target">Regional Sourcing</span>
+            <span class="planet-pillar-card__status">Active Protocol</span>
+          </div>
+        </div>
+
+        <!-- Pillar 05 (Spans 2 columns on desktop) -->
+        <div class="planet-pillar-card planet-pillar-card--wide">
+          <div class="planet-pillar-card__top">
+            <span class="planet-pillar-card__index">05 / CIVIC WELLBEING</span>
+            <h3 class="planet-pillar-card__title">Restoring the Biophilic Connection</h3>
+            <p class="planet-pillar-card__desc">
+              Groundbreaking neuroscience proves that daily visual and tactile contact with living landscapes drastically lowers cardiovascular stress and fosters community cohesion. Every Artasian design ensures that all citizens—regardless of background—enjoy unhindered daily immersion in therapeutic, sensorial nature.
+            </p>
+          </div>
+          <div class="planet-pillar-card__footer">
+            <span class="planet-pillar-card__target">Social &amp; Mental Health</span>
+            <span class="planet-pillar-card__status">Active Protocol</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaborative Action Callout -->
+    <section class="planet-container">
+      <div class="planet-cta">
+        <div class="planet-cta__content">
+          <span class="planet-cta__eyebrow">Partner with our studio</span>
+          <h2 class="planet-cta__title">Together, let us design a regenerative future.</h2>
+          <p class="planet-cta__desc">
+            We collaborate with developers, city councils, and environmental institutions worldwide to craft climate-positive spaces. Speak with our ecological directors in Bath, London, or Singapore.
+          </p>
+        </div>
+        <div class="planet-cta__action">
+          <a href="contact.html" class="planet-cta__btn">
+            <span>Start a Conversation</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative py-4 text-sm bg-white footer">
+    <div class="wrapper">
+      <div class="g-grid">
+        <div class="g-grid__col md:w-12/17 lg:w-10/17">
+          <div class="footer__logo mb-2">
+            <img class="footer__logo-img" src="assets/img/artasian-logo-dark.png" alt="Artasian" height="52">
+          </div>
+          <p class="text-xs text-grey-mid">&copy; 2026 Artasian Ltd</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SVG Sprite -->
+  <div class="visuallyhidden" style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <symbol id="grant-associates-logo" viewBox="0 0 148.031 54.513"><path d="M28.994 6.687a.705.705 0 01-.879.678 4.979 4.979 0 00-1.135-.126 4.327 4.327 0 00-4.147 3.338v11.284a.7.7 0 01-.7.7h-1.618a.7.7 0 01-.7-.7V5.407a.7.7 0 01.7-.7h1.615a.7.7 0 01.7.7v1.631a4.992 4.992 0 014.429-2.695 6 6 0 011.162.105.7.7 0 01.57.69zM48.583 4.705H50.2a.7.7 0 01.7.7v1.553a6.681 6.681 0 015.275-2.614c4.067 0 6.282 2.614 6.282 6.515v11a.7.7 0 01-.7.7H60.1a.7.7 0 01-.7-.7V11.342c0-2.494-1.248-4.224-3.946-4.224a4.85 4.85 0 00-4.554 3.339v11.4a.7.7 0 01-.7.7h-1.617a.7.7 0 01-.7-.7V5.407a.7.7 0 01.7-.7M71.058 22.562h-1.615a.7.7 0 01-.7-.7V7.279H65.7a.7.7 0 01-.7-.7V5.407a.7.7 0 01.7-.7h3.04V.7a.7.7 0 01.7-.7h1.615a.7.7 0 01.7.7v4H75.2a.7.7 0 01.7.7v1.178a.7.7 0 01-.7.7h-3.439v14.583a.7.7 0 01-.7.7M17.517 50.983a.7.7 0 011.1-.577 8.4 8.4 0 004.783 1.533c1.974 0 3.7-.724 3.7-2.494 0-1.327-1.006-2.051-2.577-2.574l-2.456-.844c-2.7-.885-4.51-2.172-4.51-5.068 0-3.137 2.778-5.027 6.322-5.027a9.5 9.5 0 014.747 1.209 1.15 1.15 0 01.568 1v1.1a.7.7 0 01-1.084.587 7.446 7.446 0 00-4.231-1.318c-1.853 0-3.383.8-3.383 2.333 0 1.447.967 1.93 2.658 2.533l2.738.925c2.7.925 4.188 2.494 4.188 5.028 0 3.3-2.939 5.188-6.685 5.188a10.444 10.444 0 01-5.322-1.382 1.17 1.17 0 01-.557-.993zM32.538 50.983a.7.7 0 011.1-.577 8.406 8.406 0 004.782 1.533c1.973 0 3.7-.724 3.7-2.494 0-1.327-1.007-2.051-2.578-2.574l-2.456-.844c-2.7-.885-4.51-2.172-4.51-5.068 0-3.137 2.778-5.027 6.322-5.027a9.5 9.5 0 014.747 1.209 1.151 1.151 0 01.569 1v1.1a.7.7 0 01-1.085.587 7.446 7.446 0 00-4.229-1.322c-1.852 0-3.382.8-3.382 2.333 0 1.447.966 1.93 2.657 2.533l2.739.925c2.7.925 4.187 2.494 4.187 5.028 0 3.3-2.939 5.188-6.684 5.188a10.448 10.448 0 01-5.323-1.382 1.169 1.169 0 01-.556-.993zM55.531 38.586c-3.221 0-5.154 2.735-5.154 6.636s1.933 6.637 5.154 6.637 5.154-2.735 5.154-6.637-1.932-6.636-5.154-6.636m0 15.927c-4.912 0-8.215-3.821-8.215-9.291s3.3-9.29 8.215-9.29c4.873 0 8.215 3.821 8.215 9.29s-3.342 9.291-8.215 9.291M74.458 35.932a7.633 7.633 0 014.5 1.253.712.712 0 01.294.572v1.257a.7.7 0 01-1.073.595 6.387 6.387 0 00-3.518-.982c-3.181 0-5.758 2.493-5.758 6.595s2.577 6.6 5.758 6.6a6.387 6.387 0 003.518-.982.7.7 0 011.073.595v1.257a.712.712 0 01-.294.572 7.633 7.633 0 01-4.5 1.253c-4.832 0-8.618-3.579-8.618-9.291s3.786-9.29 8.618-9.29M84.95 54.151h-1.615a.7.7 0 01-.7-.7V37a.7.7 0 01.7-.7h1.615a.7.7 0 01.7.7v16.449a.7.7 0 01-.7.7m-.828-21.316a1.958 1.958 0 01-1.932-1.93 1.953 1.953 0 013.906 0 1.967 1.967 0 01-1.974 1.93M111.65 54.151h-1.616a.7.7 0 01-.7-.7V38.868h-3.043a.7.7 0 01-.7-.7V37a.7.7 0 01.7-.7h3.043v-4a.7.7 0 01.7-.7h1.616a.7.7 0 01.7.7v4h3.45a.7.7 0 01.7.7v1.17a.7.7 0 01-.7.7h-3.446v14.579a.7.7 0 01-.7.7M120.889 43.372h9.222c-.121-2.614-1.45-4.866-4.349-4.866-2.376 0-4.309 1.569-4.873 4.866zm-.161 2.373c.121 4.143 2.738 6.114 6 6.114a7.655 7.655 0 004.022-.993.7.7 0 011.052.606v1.115a.715.715 0 01-.316.588 8.889 8.889 0 01-5.12 1.338c-5.155 0-8.618-3.5-8.618-9.13 0-5.55 3.222-9.451 7.974-9.451 4.832 0 7.328 3.5 7.328 8.727v.385a.7.7 0 01-.7.7zM135.467 50.983a.7.7 0 011.1-.577 8.408 8.408 0 004.782 1.533c1.973 0 3.7-.724 3.7-2.494 0-1.327-1.007-2.051-2.577-2.574l-2.457-.844c-2.7-.885-4.51-2.172-4.51-5.068 0-3.137 2.779-5.027 6.323-5.027a9.413 9.413 0 015 1.361.685.685 0 01.316.585v1.359a.7.7 0 01-1.084.587 7.446 7.446 0 00-4.231-1.318c-1.853 0-3.383.8-3.383 2.333 0 1.447.966 1.93 2.658 2.533l2.738.925c2.7.925 4.188 2.494 4.188 5.028 0 3.3-2.939 5.188-6.685 5.188a10.219 10.219 0 01-5.57-1.544.705.705 0 01-.309-.582zM13.007 17.093a5.185 5.185 0 01-4.551 2.775c-3.382 0-5.355-2.695-5.355-6.395 0-3.74 1.973-6.435 5.355-6.435a5.185 5.185 0 014.551 2.775zm2.358-12.388h-1.656a.7.7 0 00-.7.7v1.311a6.283 6.283 0 00-4.995-2.373C2.778 4.343.04 8.687.04 13.473S2.778 22.6 8.014 22.6a6.3 6.3 0 004.993-2.413v.758c0 3.821-2.5 5.711-5.678 5.711h-.074v2.734h.074c4.268 0 8.738-2.413 8.738-8.646V5.407a.7.7 0 00-.7-.7z" fill-rule="evenodd"/></symbol>
+      <symbol id="grant-associates-logo-mobile" viewBox="0 0 784.305 300.6"><path d="M254.9 121.8h6.7a2.9 2.9 0 002.9-2.9V72c2.5-8.7 9.4-13.9 17.2-13.9a24.163 24.163 0 014.7.5 2.966 2.966 0 003.7-2.8v-6.4a2.987 2.987 0 00-2.4-2.9 22.654 22.654 0 00-4.8-.4 20.855 20.855 0 00-18.4 11.2v-6.8a2.9 2.9 0 00-2.9-2.9h-6.7a2.9 2.9 0 00-2.9 2.9v68.4a2.9 2.9 0 002.9 2.9M371.5 121.8h6.7a2.9 2.9 0 002.9-2.9V71.5A20.223 20.223 0 01400 57.6c11.2 0 16.4 7.2 16.4 17.6v43.7a2.9 2.9 0 002.9 2.9h6.9a2.9 2.9 0 002.9-2.9V73.1c0-16.2-9.2-27.1-26.1-27.1a27.584 27.584 0 00-21.9 10.9v-6.4a2.9 2.9 0 00-2.9-2.9h-6.7a2.9 2.9 0 00-2.9 2.9v68.4a2.9 2.9 0 002.9 2.9M455.2 118.9a2.9 2.9 0 002.9 2.9h6.7a2.9 2.9 0 002.9-2.9V58.3H482a2.9 2.9 0 002.9-2.9v-4.9a2.9 2.9 0 00-2.9-2.9h-14.3V30.9a2.9 2.9 0 00-2.9-2.9h-6.7a2.9 2.9 0 00-2.9 2.9v16.6h-12.6a2.9 2.9 0 00-2.9 2.9v4.9a2.9 2.9 0 002.9 2.9h12.6z" fill="#1a161a"/></symbol>
+    </svg>
+  </div>
+
+  <script src="assets/js/main.js?v=18.0"></script>
+</body>
+</html>
